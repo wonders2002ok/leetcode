@@ -1,7 +1,7 @@
 package LinkedList;
 
-import Template.LinkedList;
-import Template.LinkedList.*;
+import Structure.LinkedList;
+import Structure.LinkedList.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

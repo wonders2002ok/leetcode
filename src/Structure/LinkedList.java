@@ -1,4 +1,4 @@
-package Template;
+package Structure;
 /**
  * @author Wallace
  * Basic Struct for Linked List

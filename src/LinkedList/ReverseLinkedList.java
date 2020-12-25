@@ -1,6 +1,6 @@
 package LinkedList;
 
-import Template.LinkedList.*;
+import Structure.LinkedList.*;
 
 /**
  * @author Wallace
@@ -17,14 +17,14 @@ public class ReverseLinkedList {
             return head;
         }
 
-        ListNode dummy = null;
+        ListNode dummyHead = null;
         ListNode cur = head;
         while (cur != null) {
             ListNode temp = cur.next;
-            cur.next = dummy;
-            dummy = cur;
+            cur.next = dummyHead;
+            dummyHead = cur;
             cur = temp;
         }
-        return dummy;
+        return dummyHead;
     }
 }
