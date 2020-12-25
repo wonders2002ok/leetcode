@@ -5,18 +5,20 @@ package Array;
  */
 public class BinarySearch {
     public int search (int[] nums, int target) {
-        int lo = 0, hi = nums.length - 1, mid = 0;
-        while (lo <= hi) {
-            mid = lo + ((hi - lo) / 2);
+        int start = 0;
+        int end = nums.length - 1;
+        int mid = 0;
+        while (start <= end) {
+            mid = start + ((end - start) / 2);
             // 直到相等
             if (nums[mid] == target) {
                 return mid;
             }
             if (nums[mid] < target) {
-                lo = mid + 1;
+                start = mid + 1;
             }
             if (nums[mid] > target) {
-                hi = mid -1;
+                end = mid -1;
             }
         }
         // Nothing found

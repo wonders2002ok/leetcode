@@ -1,7 +1,7 @@
 package Stack;
 
-import Stack.ValidParentheses;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -18,8 +18,16 @@ class ValidParenthesesTest {
     }
 
     @Test
-    void isValid() {
-        String s = "(){]{}[]";
+    void testValid() {
+        String s = "(){}[]";
         System.out.println(ValidParentheses.isValid(s));
+        Assertions.assertEquals(true, ValidParentheses.isValid(s));
+    }
+
+    @Test
+    void testNonValid() {
+        String s = "{}(){]";
+        System.out.println(ValidParentheses.isValid(s));
+        Assertions.assertEquals(false, ValidParentheses.isValid(s));
     }
 }

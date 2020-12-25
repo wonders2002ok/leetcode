@@ -29,7 +29,7 @@ class AddTwoNumbersTest {
         //l1: 2->4->3
         l1.addToTail(new ListNode(2));
         l1.addToTail(new ListNode(4));
-        l1.addToTail(new ListNode(9));
+        l1.addToTail(new ListNode(3));
         //l2: 5->6->4
         l2.addToTail(new ListNode(5));
         l2.addToTail(new ListNode(6));
@@ -37,6 +37,7 @@ class AddTwoNumbersTest {
 
         result.head = addTwoNumbers(l1.head, l2.head);
         result.printList();
+        //to-do: to be implemented
     }
 
     @Test
@@ -52,6 +53,7 @@ class AddTwoNumbersTest {
         //l2: empty
         result.head = addTwoNumbers(l1.head, l2.head);
         result.printList();
+        //to-do: to be implemented
     }
 
     @Test
@@ -64,5 +66,6 @@ class AddTwoNumbersTest {
         //l2: empty
         result.head = addTwoNumbers(l1.head, l2.head);
         result.printList();
+        //to-do: to be implemented
     }
 }

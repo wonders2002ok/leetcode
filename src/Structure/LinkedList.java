@@ -64,4 +64,18 @@ public class LinkedList {
         }
         System.out.println();
     }
+
+    /**
+     * Count and return number of nodes
+     * @return number of nodes
+     */
+    public int countList() {
+        int count = 0;
+        ListNode temp = head;
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
 }

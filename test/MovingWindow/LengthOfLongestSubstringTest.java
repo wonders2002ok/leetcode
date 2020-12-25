@@ -2,6 +2,7 @@ package MovingWindow;
 
 import MovingWindow.LengthOfLongestSubstring;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -21,6 +22,6 @@ class LengthOfLongestSubstringTest {
     void lengthOfLongestSubstring() {
         String s = "abcabcbb";
         int max = LengthOfLongestSubstring.lengthOfLongestSubstring(s);
-        System.out.println(max);
+        Assertions.assertEquals(3, max);
     }
 }
