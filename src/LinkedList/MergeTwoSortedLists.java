@@ -13,6 +13,7 @@ public class MergeTwoSortedLists {
      * @return node
      */
     public static ListNode sortedMerge(ListNode l1, ListNode l2) {
+
         // if all equals null, return null.
         if (l1 == null && l2 == null) {
             return null;

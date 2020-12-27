@@ -21,7 +21,7 @@ class LengthOfLongestSubstringTest {
     @Test
     void lengthOfLongestSubstring() {
         String s = "abcabcbb";
-        int max = LengthOfLongestSubstring.lengthOfLongestSubstring(s);
-        Assertions.assertEquals(3, max);
+        int maxLength = LengthOfLongestSubstring.lengthOfLongestSubstring(s);
+        Assertions.assertEquals(3, maxLength);
     }
 }
